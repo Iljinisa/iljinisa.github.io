@@ -1,0 +1,14 @@
+[book]
+title = "software-production"
+authors = ["Niko Iljin"]
+language = "en"
+src = "src"
+
+[output.html]
+git-repository-url = "https://github.com/ohjelmistotuotanto-jyu/ohjelmistotuotanto-jyu.github.io"
+sidebar-header-nav = false
+no-section-label = true
+
+[output.html.fold]
+enable = true
+level = 0
