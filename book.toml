@@ -4,6 +4,9 @@ authors = ["Niko Iljin"]
 language = "en" 
 src = "src"
 
+[preprocessor.gettext]
+after = ["links"]
+
 [output.html]
 theme = "theme"
 additional-js = ["theme/lang_switcher.js"]
