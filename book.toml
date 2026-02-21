@@ -1,13 +1,15 @@
 [book]
-title = "software-production"
+title = "Software Engineering" 
 authors = ["Niko Iljin"]
-language = "en"
+language = "en" 
 src = "src"
 
 [output.html]
-git-repository-url = "https://github.com/ohjelmistotuotanto-jyu/ohjelmistotuotanto-jyu.github.io"
-sidebar-header-nav = false
+theme = "theme"
+additional-js = ["theme/lang_switcher.js"]
+additional-css = ["theme/lang_switcher.css"]
 no-section-label = true
+sidebar-header-nav = false
 
 [output.html.fold]
 enable = true

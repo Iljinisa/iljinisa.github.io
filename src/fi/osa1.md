@@ -7,7 +7,7 @@ Ensimmäisessä osassa käydään aluksi katsaus _ohjelmistotuotantoon_, sen his
 
 Tämän osan jälkipuolisko keskittyy suosituimpaan ketterään menetelmään _Scrumiin_, joka antaa erään konkreettisen ohjeiston sille miten ketteriä ohjelmistoprojekteja voi hallita.
 
-Olethan jo lukenut [osan 0](osa0.md), missä käydään tarkemmin läpi kurssin järjestelyt ja arvosteluperiaatteet?
+Olethan jo lukenut [Johdannon](osa0.md), missä käydään tarkemmin läpi kurssin järjestelyt ja arvosteluperiaatteet?
 
 ## Typoja materiaalissa
 
@@ -120,13 +120,9 @@ Syntyi idea siitä, että _code'n'fix_ -mentaliteetin sijaan ohjelmistojen kehit
 
 ### Vesiputous- eli lineaarinen malli
 
-Winston Roycen vuonna 1970 julkaisema artikkeli [Management of the development of Large Software][https://web.archive.org/web/20230326053749/http://www-scf.usc.edu/~csci201/lectures/Lecture11/royce1970.pdf] pohdiskelee isojen ohjelmistojen kehittämiseen liittyvää problematiikkaa. Artikkelin sivulla 2 Royce esittelee yksinkertaisen _prosessimallin_ (eli ohjeiston työvaiheiden jaksottamiseen), jossa ohjelmiston elinkaaren vaiheet suoritetaan lineaarisesti peräkkäin:
+Winston Roycen vuonna 1970 julkaisema artikkeli [Management of the development of Large Software][https://web.archive.org/web/20230326053749/http://www-scf.usc.edu/~csci201/lectures/Lecture11/royce1970.pdf] pohdiskelee isojen ohjelmistojen kehittämiseen liittyvää problematiikkaa. Artikkelin sivulla 2 Royce esittelee yksinkertaisen _prosessimallin_ (eli ohjeiston työvaiheiden jaksottamiseen), jossa ohjelmiston elinkaaren vaiheet suoritetaan lineaarisesti peräkkäin. Roycen versio kuvasta näyttää seuraavalta:
 
-![][https://raw.githubusercontent.com/mluukkai/ohjelmistotekniikka-kevat2019/main/web/images/l-1.png]
-
-Roycen versio kuvasta näyttää seuraavalta:
-
-![][images/1-1.png]
+![](../../images/1-1.png)
 
 Suoraviivainen lineaarinen malli, jota ruvettiin kutsumaan vesiputousmalliksi, saavutti nopeasti suosiota. Malli on monella tapaa järkeenkäypä; ensin kannattaa selvittää mitä ollaan tekemässä ja suunnittelu hoitaa vasta tämän jälkeen. Kun suunnitelma on valmis, voidaan tuote valmistaa ja sen jälkeen testata että se toimii kuten haluttiin, näinhän toimitaan monella muullakin tuotannon alalla.
 
