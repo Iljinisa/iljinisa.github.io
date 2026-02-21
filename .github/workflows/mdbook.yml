@@ -28,25 +28,29 @@ jobs:
   # Build job
   build:
     runs-on: ubuntu-latest
-    env:
-      MDBOOK_VERSION: 0.4.36
+    # Removed: env: MDBOOK_VERSION: 0.4.36
     steps:
       - uses: actions/checkout@v4
-      - name: Install mdBook
+      - name: Install Rust
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+          profile: minimal
+          override: true
+      - name: Install mdBook and mdbook-i18n-helpers
         run: |
-          curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf -y | sh
-          rustup update
-          cargo install --version ${MDBOOK_VERSION} mdbook
-          cargo install mdbook-i18n-helpers # Install the i18n helper
+          # Removed --version ${MDBOOK_VERSION}
+          cargo install mdbook
+          cargo install mdbook-i18n-helpers
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
       - name: Build with mdBook
-        run: mdbook build
+        run: mdbook build --dest-dir dist . # Explicitly build into the 'dist' directory
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./book
+          path: ./dist # Upload the 'dist' directory, not './book'
 
   # Deployment job
   deploy:
