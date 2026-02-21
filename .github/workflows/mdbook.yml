@@ -7,7 +7,7 @@ name: Deploy mdBook site to Pages
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["main", "actionstest"]
+    branches: ["main"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -28,7 +28,6 @@ jobs:
   # Build job
   build:
     runs-on: ubuntu-latest
-    # Removed: env: MDBOOK_VERSION: 0.4.36
     steps:
       - uses: actions/checkout@v4
       - name: Install Rust
@@ -39,18 +38,19 @@ jobs:
           override: true
       - name: Install mdBook and mdbook-i18n-helpers
         run: |
-          # Removed --version ${MDBOOK_VERSION}
+          curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf -y | sh
+          rustup update
           cargo install mdbook
           cargo install mdbook-i18n-helpers
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
       - name: Build with mdBook
-        run: mdbook build --dest-dir dist . # Explicitly build into the 'dist' directory
+        run: mdbook build 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist # Upload the 'dist' directory, not './book'
+          path: ./book
 
   # Deployment job
   deploy:
