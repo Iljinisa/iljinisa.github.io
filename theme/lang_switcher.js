@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const langSelect = document.createElement('select');
     langSelect.id = 'lang-select';
 
@@ -45,31 +45,48 @@ document.addEventListener('DOMContentLoaded', function() {
         const chapterList = document.querySelector('ol.chapter'); // The main ordered list in the sidebar
         if (!chapterList) return;
 
-        // Select all relevant LI elements (chapter items, part titles, spacers)
-        const allListItems = chapterList.querySelectorAll('li.chapter-item, li.part-title, li.spacer');
-
-        allListItems.forEach(item => {
-            let itemLang = null;
-
+        // Helper to determine language of an item
+        function getItemLang(item) {
             if (item.classList.contains('part-title')) {
                 // For part-title elements (like "Course Material (EN)" or "Finnish Course")
                 const text = item.textContent.toLowerCase();
                 // Check for explicit (EN) or (FI) or just "english" / "finnish" in the title
                 if (text.includes('(en)') || text.includes('english book')) {
-                    itemLang = 'en';
+                    return 'en';
                 } else if (text.includes('(fi)') || text.includes('finnish')) {
-                    itemLang = 'fi';
+                    return 'fi';
                 }
             } else if (item.classList.contains('chapter-item')) {
                 // For actual chapter links
                 const link = item.querySelector('a');
                 if (link) {
-                    itemLang = getLangFromPathname(link.href);
+                    return getLangFromPathname(link.href);
                 }
-            } else if (item.classList.contains('spacer')) {
-                // Spacers should generally be visible to maintain layout, or hidden if both languages are hidden around them.
-                // For simplicity, let's make them visible unless explicitly associated with a hidden language block.
-                itemLang = null; // Don't filter by language explicitly
+            }
+            return null;
+        }
+
+        // Select all relevant LI elements (chapter items, part titles, spacers)
+        // Convert to array for index access
+        const allListItems = Array.from(chapterList.querySelectorAll('li.chapter-item, li.part-title, li.spacer'));
+
+        allListItems.forEach((item, index) => {
+            let itemLang = getItemLang(item);
+
+            if (item.classList.contains('spacer')) {
+                // Spacers adopt the language of the following section/item
+                for (let i = index; i < allListItems.length; i++) {
+                    const nextItem = allListItems[i];
+                    if (nextItem.classList.contains('spacer')) continue; // Skip consecutive spacers
+
+                    const nextLang = getItemLang(nextItem);
+                    if (nextLang) {
+                        itemLang = nextLang;
+                    }
+                    // We found the next content item, so we stop searching.
+                    // If nextLang was null, itemLang remains null (visible), which is correct for neutral sections.
+                    break;
+                }
             }
 
             // Apply display style
@@ -97,10 +114,10 @@ document.addEventListener('DOMContentLoaded', function() {
     applySidebarFilter(currentLanguage);
 
     // Event listener for language change
-    langSelect.addEventListener('change', function() {
+    langSelect.addEventListener('change', function () {
         const newLang = this.value;
         localStorage.setItem('mdbook-lang', newLang);
-        
+
         applySidebarFilter(newLang); // Filter sidebar immediately
 
         // Redirect to the corresponding language's page

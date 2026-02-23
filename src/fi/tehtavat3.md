@@ -205,14 +205,14 @@ Jos docker build epäonnistuu: lue virheilmoitus — yleensä puuttuva tiedosto,
 
 - Kontti ei käynnisty tai kaatuu heti:
   - docker ps -a — katso exit-koodi.
-  - docker logs <name> — katso sovellusvirheet.
+  - docker logs &lt;name&gt; — katso sovellusvirheet.
 
 
 - Portin varaus hostissa:
   - sudo lsof -iTCP:80 -sTCP:LISTEN -n -P ; jos varattu, käytä toista host-porttia (esim. -p 8080:80).
 
 - Yleinen nopea korjaus:
-  - pysäytä/poista vanha kontti: docker stop <name> && docker rm {name}
+  - pysäytä/poista vanha kontti: docker stop &lt;name&gt; && docker rm {name}
   - aja uudella portilla: docker run -p 8080:80 --rm --name temp {image}
 
 Katso kontin lokit:

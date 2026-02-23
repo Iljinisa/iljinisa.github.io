@@ -323,6 +323,4 @@ Once all steps have been completed, try running the failed Poetry command again.
 
 #### Keyring problem
 
-If running the `poetry install `command prompts you for a keyring password, the problem should be solved by running `export PYTHON_KEYRING_BACKEND=keyring.backends.fail.Keyring `in the terminal and then running the `poetry install `command again. You can put this line in your *.bashrc* (or similar) file so that you don\'t have to run it at the beginning of every terminal session.
-
-[^1]: a-z
+If running the `poetry install `command prompts you for a keyring password, the problem should be solved by running `export PYTHON_KEYRING_BACKEND=keyring.backends.fail.Keyring `in the terminal and then running the `poetry install `command again. You can put this line in your *.bashrc* (or similar) file so that you don't have to run it at the beginning of every terminal session.

@@ -3,7 +3,7 @@
 - [Introduction (EN)](en/osa0.md)
 - [Progress (TIM) (EN)](en/progress.md)
 
-
+---
 
 # Course Material (EN)
 
@@ -13,7 +13,7 @@
 - [Part 4 - Architecture (EN)](en/osa4.md)
 - [Part 5 - Lean and Scalability (EN)](en/part5.md)
 
-
+---
 
 ## Assignments (EN)
 
@@ -28,7 +28,7 @@
 - [Assignments 6 (EN)](en/tasks6.md)
 - [Assignments 7 (EN)](en/tasks7.md)
 
-
+---
 
 ## Miniproject (EN)
 
@@ -36,7 +36,7 @@
   - [Background (EN)](en/speksi.md)
   - [Grading Criteria (EN)](en/miniprojektin_arvosteluperusteet.md)
 
-
+---
 
 ## Exam (EN)
 
@@ -48,6 +48,7 @@
   - [Exam 2022 (EN)](en/koe2022.md)
   - [Exam 2023 (EN)](en/koe2023.md)
 
+---
 
 ## Guides (EN)
 
