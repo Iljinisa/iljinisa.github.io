@@ -1,6 +1,6 @@
 [book]
 title = "Software Engineering" 
-authors = ["Niko Iljin"]
+authors = ["JYU"]
 language = "en" 
 src = "src"
 
@@ -20,10 +20,8 @@ level = 0
 
 [output.html.search]
 enable = true
-# Limits search results to 20 per query to prevent overwhelming the user.
+
 limit-results = 20
 # Splits the content of a chapter into multiple search results based on the heading level.
-# Setting it to 2 means it will split on H2 and higher, potentially reducing the search index size.
 heading-split-level = 2
-# Ensures search JavaScript is copied, useful for offline access or specific deployments.
 copy-js = true
