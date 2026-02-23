@@ -1,5 +1,3 @@
->\>\>
-
 The course includes weekly calculation exercises. There are *two types of* assignments
 
 - *weekly multiple-choice exercises* that review the theory covered in the lectures and course materials, with a deadline of Sunday at 23:59:00
@@ -42,5 +40,3 @@ In addition to the feedback collected at the end of the course, you can give ano
 ### Week
 
 - \[theory assignments\]\[https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2025/tehtavat/teoriatehtavat-osa-5\] deadline Sunday, November 30, at 11:59 p.m.
-
-\<\<\

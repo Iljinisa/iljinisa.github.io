@@ -1,4 +1,4 @@
->\>\>
+
 
 This section has dealt with software design and implementation. Next, we will look at where licensing plays a significant role in software design.
 
@@ -82,4 +82,3 @@ There is a big difference between free software and open source code. The follow
 
 If you are interested in software freedom, feel free to send Akira a message!
 
-\<\<\

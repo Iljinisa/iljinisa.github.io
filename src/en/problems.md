@@ -1,5 +1,3 @@
->\>\>
-
 ## no root
 
 When running the `poetry install `command, you may encounter the following error message:
@@ -42,5 +40,3 @@ You can add this line to your .bashrc (or similar) file so that you don\'t have 
 ## More instructions
 
 A few additional instructions can be found [in the Poetry manual](poetry.md#ratkaisuja-yleisiin-ongelmiin)
-
-\<\<\

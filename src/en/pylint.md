@@ -1,5 +1,3 @@
->\>\>
-
 *These instructions are copied from the Pylint instructions for the University of Helsinki\'s Software Engineering course, with a few additions.*
 
 In addition to testing code, maintaining code quality is important. Quality can be maintained using various manual methods, such as documenting quality requirements and code reviews. However, many manual quality control methods often prove to be too time-consuming and error-prone in large software projects. *Static analysis* is a method that allows code to be analyzed automatically without having to execute it. Static analysis is widely used in software development, for example, to detect programming errors and perform quality checks.
@@ -67,5 +65,3 @@ After that, we can format the code in the *src* directory in the virtual environ
     autopep8 --in-place --recursive src
 
 Code formatting can also be done conveniently in many editors with a single keyboard command. Instructions for formatting code in Visual Studio Code can be found \[here\]\[https://code.visualstudio.com/docs/editor/codebasics#\_formatting\].
-
-\<\<\

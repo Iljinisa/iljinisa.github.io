@@ -1,4 +1,4 @@
->\>\>
+
 
 - Create an encryption key by entering the command `ssh-keygen `in the command line.
   - You can answer all questions by pressing Enter
@@ -17,4 +17,3 @@
 
 \![\]\[images/ssh1.png\]
 
-\<\<\

@@ -1,5 +1,3 @@
->\>\>
-
 This task introduces you to using Docker, making pull requests, and writing acceptance tests using the robot library.
 
 ### Are there any typos or ambiguities in the tasks?
@@ -349,5 +347,3 @@ When you have finished debugging, enter `exit() `and remove the call to the set_
 ### Submitting assignments
 
 Push the **Robot framework** tasks you have created to your GitHub repository and mark the tasks you have completed \[in Timi\]\[https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2025/tehtavat/konfigurointitehtavat-osa-3\]
-
-\<\<\

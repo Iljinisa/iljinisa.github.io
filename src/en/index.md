@@ -1,4 +1,4 @@
->\>\>
+
 
 The course covers the basics of software production project management, work phases, and tools, with an emphasis on agile software production methods.
 
@@ -129,4 +129,3 @@ The course uses open learning materials developed by Matti Luukkainen and Kalle 
 
 This material is licensed under a Creative Commons BY-NC-SA 3.0 license, so you can use and distribute it freely as long as the names of the original authors are not removed. If you make changes to the material and want to distribute the modified version, it must be licensed under the same license. The use of the materials for commercial purposes is prohibited without separate permission.
 
-\<\<\

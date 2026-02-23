@@ -1,5 +1,3 @@
->\>\>
-
 This week\'s assignments will first focus on practicing the use of a few important software development tools (*command line, version control, dependency management, automated testing, continuous integration*).
 
 ### Are there any typos or ambiguities in the tasks?
@@ -639,5 +637,3 @@ Push the code to GitHub and make sure that Codecov generates a report that ignor
 ### Submitting assignments
 
 Push all the tasks you have completed (except those that mention that the task will not be submitted anywhere) to your GitHub repository and mark the tasks you have completed \[in Timi\]\[https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2025/tehtavat/konfigurointitehtavat-osa-1\].
-
-\<\<\

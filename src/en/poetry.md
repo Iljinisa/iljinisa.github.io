@@ -1,5 +1,3 @@
->\>\>
-
 *This guide is a copy of the Software Engineering \[Poetry Guide\]\[https://ohjelmistotekniikka-hy.github.io/python/viikko2#poetry-ja-riippuvuuksien-hallinta\] guide with a few additions.*
 
 In large and complex software projects, it is no longer practical to produce all the code yourself. For example, it does not make sense to implement a separate programming interface for database operations or an application framework for testing code in every software project. To avoid having to reinvent the wheel every time, software developers have created a huge number of open source *libraries* that anyone can use in their projects.

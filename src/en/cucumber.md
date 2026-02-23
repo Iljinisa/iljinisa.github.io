@@ -1,4 +1,4 @@
->\>\>
+
 
 \[Cucumber\]\[https://cucumber.io\] is a library/tool for automating user story acceptance testing.
 
@@ -143,4 +143,3 @@ to the *Stepdefs* class and complete it in a sensible way.
 
 Make sure the tests work.
 
-\<\<\

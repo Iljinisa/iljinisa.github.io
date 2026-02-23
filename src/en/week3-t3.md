@@ -1,5 +1,3 @@
->\>\>
-
 In the `AppLibrary.py `file, all methods are implementations of Robot keywords. Since this is a command line application, AppLibrary also has to create an object App in its constructor that corresponds to the application being tested. For example, when testing a web application, this is not (necessarily) necessary, and the role of AppLibrary can be solely to implement keywords.
 
 The constructor creates the application to be tested and injects it with a StubIO object, through which the test can communicate with the application, as well as UserService:
@@ -116,5 +114,3 @@ The test setup could be simplified so that the default user would be created dir
             self._app.run()
 
 This way, the keyword `Create User `and its implementation could be removed.
-
-\<\<\

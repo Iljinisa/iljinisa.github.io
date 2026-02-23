@@ -1,5 +1,3 @@
->\>\>
-
 ## Selenium troubleshooting
 
 Some people have had problems with Selenium. Below are a few ways to solve these problems. If you encounter a problem and solve it in a way not mentioned below, add the instructions to the document by editing \[this\]\[https://github.com/ohjelmistotuotanto-jyu/ohjelmistotuotanto-jyu.github.io/blob/master/selenium_troubleshooting.md\].
@@ -184,5 +182,3 @@ You can work around this problem by modifying the program code as follows, for e
             options.addArguments("--ozone-platform=x11");
             //WebDriver driver = new ChromeDriver();
             WebDriver driver = new ChromeDriver(options);
-
-\<\<\

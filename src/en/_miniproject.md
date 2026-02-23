@@ -170,4 +170,3 @@ Keep the program operational at all times. It is a very bad idea to try to integ
 
 The assessment criteria can be found \[here\]\[miniprojektin_arvosteluperusteet/\]
 
-\<\<\

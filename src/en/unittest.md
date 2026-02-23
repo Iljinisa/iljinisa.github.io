@@ -1,5 +1,3 @@
->\>\>
-
 *This guide is a copy of the software engineering course \[Unittest guide\]\[https://ohjelmistotekniikka-hy.github.io/python/viikko2#unittest-ja-testaaminen\] with a few additions.*
 
 Let\'s learn how to perform unit tests using the \[unittest\]\[https://docs.python.org/3/library/unittest.html\] application framework. In unit tests, the smallest structural components of the program, i.e., individual functions and class objects and their methods, are tested.
@@ -392,5 +390,3 @@ It is worth noting that **the subdirectories** of the src directory (not the src
         __init__.py
         todo_service.py
       ...
-
-\<\<\

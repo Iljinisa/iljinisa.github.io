@@ -1,5 +1,3 @@
->\>\>
-
 In this section, we will introduce software quality management and, in particular, the testing and quality management methods favored by agile methods.
 
 ## Typos in the material
@@ -948,5 +946,3 @@ Additional practices related to organizational efficiency have also been identif
 The following image, taken from the book Accelerate, visualizes how different practices contribute to a company\'s efficiency:
 
 \![\]\[images/3-26.png\]{:height="500px" }
-
-\<\<\

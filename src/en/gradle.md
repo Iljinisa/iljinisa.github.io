@@ -1,4 +1,4 @@
->\>\>
+
 
 ## Introduction to Gradle configuration
 
@@ -250,4 +250,3 @@ Let\'s break the test again and make sure that the tests detect the error.
 
 The new version of JUnit \[JUnit5\]\[http://junit.org/junit5/\] was released some time ago after years of anticipation. JUnit5 has many interesting new features, but unfortunately, tool support is still so incomplete that we have to use the old JUnit in the course.
 
-\<\<\

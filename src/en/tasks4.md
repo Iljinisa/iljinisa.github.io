@@ -1,5 +1,3 @@
->\>\>
-
 The exercises introduce you to dependency mocking in unit tests.
 
 ### Are there any typos or ambiguities in the exercises?
@@ -253,5 +251,3 @@ Make sure that your mini-project team holds a retrospective using one of these t
 ### Submitting assignments
 
 Push all your tasks to your GitHub repository and mark your completed tasks \[in Timi\]\[https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2025/tehtavat/konfigurointitehtavat-osa-4\]. The retrospective assignment is submitted directly to the form in Timi.
-
-\<\<\

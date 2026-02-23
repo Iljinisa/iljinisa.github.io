@@ -1,4 +1,4 @@
->\>\>
+
 
 ## Dependency injection in the Spring application framework
 
@@ -92,4 +92,3 @@ If this is not the desired behavior, Spring can be \[configured\]\[https://docs.
 
 More information about how Spring containers work can be found in the \[documentation\]\[https://docs.spring.io/spring/docs/5.2.0.RELEASE/spring-framework-reference/core.html#beans\].
 
-\<\<\
