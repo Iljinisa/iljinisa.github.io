@@ -12,13 +12,9 @@ document.addEventListener('DOMContentLoaded', function () {
     fiOption.textContent = 'Suomi';
     langSelect.appendChild(fiOption);
 
-    const langLabel = document.createElement('label');
-    langLabel.setAttribute('for', 'lang-select');
-    langLabel.textContent = 'Language ';
 
     const switcherContainer = document.createElement('div');
     switcherContainer.id = 'language-switcher';
-    switcherContainer.appendChild(langLabel);
     switcherContainer.appendChild(langSelect);
 
     const sidebar = document.querySelector('nav#sidebar');
