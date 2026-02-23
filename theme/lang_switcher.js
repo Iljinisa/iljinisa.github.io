@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const langLabel = document.createElement('label');
     langLabel.setAttribute('for', 'lang-select');
-    langLabel.textContent = 'Language: ';
+    langLabel.textContent = 'Language ';
 
     const switcherContainer = document.createElement('div');
     switcherContainer.id = 'language-switcher';
@@ -45,62 +45,84 @@ document.addEventListener('DOMContentLoaded', function () {
         const chapterList = document.querySelector('ol.chapter'); // The main ordered list in the sidebar
         if (!chapterList) return;
 
-        // Helper to determine language of an item
-        function getItemLang(item) {
-            if (item.classList.contains('part-title')) {
-                // For part-title elements (like "Course Material (EN)" or "Finnish Course")
-                const text = item.textContent.toLowerCase();
-                // Check for explicit (EN) or (FI) or just "english" / "finnish" in the title
-                if (text.includes('(en)') || text.includes('english book')) {
-                    return 'en';
-                } else if (text.includes('(fi)') || text.includes('finnish')) {
-                    return 'fi';
-                }
-            } else if (item.classList.contains('chapter-item')) {
-                // For actual chapter links
+        const allListItems = Array.from(chapterList.children);
+
+        // Pass 1: Determine language for each item
+        const itemLangs = new Map();
+
+        for (let i = 0; i < allListItems.length; i++) {
+            const item = allListItems[i];
+
+            if (item.classList.contains('chapter-item')) {
                 const link = item.querySelector('a');
                 if (link) {
-                    return getLangFromPathname(link.href);
+                    itemLangs.set(item, getLangFromPathname(link.href));
                 }
+            } else if (item.classList.contains('part-title')) {
+                // Look ahead for the next chapter-item to infer language
+                let inferredLang = null;
+                for (let j = i + 1; j < allListItems.length; j++) {
+                    const nextItem = allListItems[j];
+                    if (nextItem.classList.contains('chapter-item')) {
+                        const link = nextItem.querySelector('a');
+                        if (link) {
+                            inferredLang = getLangFromPathname(link.href);
+                        }
+                        break; // Found the next chapter, stop looking
+                    }
+                }
+                itemLangs.set(item, inferredLang);
             }
-            return null;
+            // Spacers don't have intrinsic language
         }
 
-        // Select all relevant LI elements (chapter items, part titles, spacers)
-        // Convert to array for index access
-        const allListItems = Array.from(chapterList.querySelectorAll('li.chapter-item, li.part-title, li.spacer'));
+        // Pass 2: Apply visibility
+        let lastVisibleItem = null;
+        let pendingSpacers = [];
 
-        allListItems.forEach((item, index) => {
-            let itemLang = getItemLang(item);
+        function processPendingSpacers(showOne) {
+            if (showOne && pendingSpacers.length > 0) {
+                pendingSpacers[0].style.display = '';
+                for (let k = 1; k < pendingSpacers.length; k++) {
+                    pendingSpacers[k].style.display = 'none';
+                }
+            } else {
+                pendingSpacers.forEach(s => s.style.display = 'none');
+            }
+            pendingSpacers = [];
+        }
 
+        allListItems.forEach(item => {
             if (item.classList.contains('spacer')) {
-                // Spacers adopt the language of the following section/item
-                for (let i = index; i < allListItems.length; i++) {
-                    const nextItem = allListItems[i];
-                    if (nextItem.classList.contains('spacer')) continue; // Skip consecutive spacers
+                pendingSpacers.push(item);
+            } else {
+                // Content item (chapter-item or part-title)
+                const lang = itemLangs.get(item);
 
-                    const nextLang = getItemLang(nextItem);
-                    if (nextLang) {
-                        itemLang = nextLang;
+                // Visible if language matches or is neutral (null)
+                // Note: We treat null as neutral (visible in all), unless we want to enforce EN/FI strictly.
+                // Given the structure, most items should now be identified.
+                const isVisible = (lang === selectedLang || lang === null);
+
+                if (isVisible) {
+                    item.style.display = '';
+
+                    if (lastVisibleItem) {
+                        // Show one spacer between the previous visible item and this one
+                        processPendingSpacers(true);
+                    } else {
+                        // First visible item, hide leading spacers
+                        processPendingSpacers(false);
                     }
-                    // We found the next content item, so we stop searching.
-                    // If nextLang was null, itemLang remains null (visible), which is correct for neutral sections.
-                    break;
+                    lastVisibleItem = item;
+                } else {
+                    item.style.display = 'none';
                 }
             }
-
-            // Apply display style
-            if (itemLang === selectedLang) {
-                item.style.display = ''; // Show
-            } else if (itemLang !== null) { // If it's a language-specific item but not the selected lang
-                item.style.display = 'none'; // Hide
-            } else {
-                // If itemLang is null (e.g., a spacer or an item whose language couldn't be determined)
-                // We'll keep these visible unless they are structurally part of a hidden block.
-                // For now, let's keep them visible. If they are nested, their parent's display will control them.
-                item.style.display = '';
-            }
         });
+
+        // Hide trailing spacers
+        processPendingSpacers(false);
     }
 
     // Get current language from localStorage or infer from URL or default to 'en'
@@ -130,20 +152,17 @@ document.addEventListener('DOMContentLoaded', function () {
             // Already on the correct language path, no redirection needed for path
         } else {
             // Replace the language part in the URL
-            if (currentLangInUrl) { // If there was a language in the URL (e.g., /en/ or /fi/)
-                newPathname = currentPathname.replace(`/${currentLangInUrl}/`, `/${newLang}/`);
-            } else {
-                // If no language prefix in current URL (e.g., at root, or /index.html directly)
-                // This means the user is probably at the site root, and we should
-                // redirect them to the new language's index page.
-                newPathname = `/${newLang}/index.html`; // Redirect to index of new language
-            }
-
-            // Construct new URL, including search and hash
-            const newUrl = newPathname + window.location.search + window.location.hash;
-            window.location.href = newUrl;
+            // If no language prefix in current URL (e.g., at root, or /index.html directly)
+            // This means the user is probably at the site root, and we should
+            // redirect them to the new language's index page.
+            newPathname = `/${newLang}/index.html`; // Redirect to index of new language
         }
-    });
+
+        // Construct new URL, including search and hash
+        const newUrl = newPathname + window.location.search + window.location.hash;
+        window.location.href = newUrl;
+    }
+    );
 
     // Styling is handled by theme/lang_switcher.css
 });
