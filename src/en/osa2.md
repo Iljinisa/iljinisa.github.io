@@ -1,4 +1,4 @@
->\>\>
+
 
 This week\'s topic is software requirements specification, particularly from the perspective of agile methods. We will also discuss product management at both the project level and during sprints.
 

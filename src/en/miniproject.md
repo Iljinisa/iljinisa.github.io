@@ -22,6 +22,7 @@
 Fill out the form for forming groups by Friday, November 7, at the latest. The form can be found \[here\]\[{{site.tim_url}}/ajanvaraus\]. The groups and their meeting times will be published as soon as possible. The first meetings will be held the following week. The first meeting may take longer than usual. Careful preparation (familiarizing yourself with the assignment, setting up version control and backlog, etc.) will help keep the meeting short and successful.
 
 - When coming to the first meeting, you should be familiar with at least the following topics from parts 1 and 2 of the material:
+
   - Scrum
   - sprint
   - user story
@@ -155,4 +156,3 @@ Keep the program operational at all times. It is a very bad idea to try to integ
 
 The assessment criteria can be found \[here\]\[miniprojektin_arvosteluperusteet/\]
 
-\<\<\

@@ -1,4 +1,4 @@
->\>\>
+
 
 ## Dependency injection
 
@@ -138,4 +138,3 @@ During testing, a version of a random number generator can be injected into the 
         def randint(self, a, b):
             return 1
 
-\<\<\

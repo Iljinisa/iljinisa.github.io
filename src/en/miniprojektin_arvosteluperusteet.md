@@ -1,4 +1,4 @@
->\>\>
+
 
 - [Preparing for the first meeting](miniprojektin_arvosteluperusteet.md#valmistautuminen)
 - [Assessment criteria for the first sprint](miniprojektin_arvosteluperusteet.md#ensimmäisen-sprintin-arvosteluperusteet)
@@ -197,4 +197,3 @@ Add the address from the settings menu:
 
 \![\]\[https://raw.githubusercontent.com/mluukkai/ohtu2017/master/images/commit3.png\]
 
-\<\<\

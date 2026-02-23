@@ -1,4 +1,4 @@
->\>\>
+
 
 The course is an introduction *to software production* for those who already know how to program, i.e., a systematic way of making slightly more extensive software in a team of several people for an external customer. The course places particular emphasis on so-called agile software production methods.
 

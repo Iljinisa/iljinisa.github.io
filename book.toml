@@ -1,6 +1,6 @@
 [book]
 title = "Software Engineering" 
-authors = ["Niko Iljin"]
+authors = ["JYU"]
 language = "en" 
 src = "src"
 
@@ -17,3 +17,11 @@ sidebar-header-nav = false
 [output.html.fold]
 enable = true
 level = 0
+
+[output.html.search]
+enable = true
+
+limit-results = 20
+# Splits the content of a chapter into multiple search results based on the heading level.
+heading-split-level = 2
+copy-js = true

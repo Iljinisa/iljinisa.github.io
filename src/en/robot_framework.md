@@ -1,5 +1,3 @@
->\>\>
-
 \[Robot Framework\]\[https://robotframework.org/\] is an application framework well suited for automating user story acceptance testing. With Robot Framework, user story tests can be written in a format that the customer understands, in natural language, but still be made automatically executable.
 
 Although Robot Framework is traditionally intended for end-to-end testing of entire software applications, we will first examine the operating principles of Robot Framework by testing a single class. Search for the project located in the \[course repository\]\[https://github.com/ohjelmistotuotanto-jyu/tehtavat/tree/main/osa3/hello-robot\] directory *code/week3/hello-robot*.
@@ -181,5 +179,3 @@ Robot Framework thus reports that there is no implementation for the keyword `Re
 ## Typos in the material
 
 Make [a correction suggestion](osa0.md#typoja-materiaalissa) by editing \[this\]\[{{site.repo_url}}/blob/{{site.repo_branch}}/{{page.path}}\] file on GitHub.
-
-\<\<\

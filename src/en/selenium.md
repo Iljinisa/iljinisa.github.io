@@ -1,5 +1,3 @@
->\>\>
-
 The tasks below are a continuation of the task related to the third round of the robot library. No points are awarded for these tasks, but the material may be useful for the mini-project.
 
 ### Debugging Robot Framework tests
@@ -492,5 +490,3 @@ The script can be used on a CI server with GitHub Actions by defining its execut
 ### Task submission
 
 Push all the tasks you have completed (except those that mention that the task will not be submitted anywhere) to your GitHub submission repository and mark the tasks you have completed in Timi <https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2025/tehtavat>
-
-\<\<\

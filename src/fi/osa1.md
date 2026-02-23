@@ -16,7 +16,7 @@ Tee [korjausehdotus](osa0.md#typoja-materiaalissa) editoimalla [tätä][{{site.r
 
 ### Kurssipalaute
 
-Kurssin lopussa kerättävän palautteen lisäksi on voit antaa milloin vain kurssihenkilökunnalle anonyymiä palautetta osoitteessa <https://norppa.jyu.fi/targets/7131/feedback>.
+Kurssin lopussa kerättävän palautteen lisäksi on voit antaa milloin vain kurssihenkilökunnalle anonyymiä palautetta osoitteessa <https://norppa.jyu.fi/targets/7131/feedback>. 
 
 
 

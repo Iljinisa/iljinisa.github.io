@@ -1,24 +1,24 @@
 #language-switcher {
     position: fixed;
-    top: 10px;
-    right: 10px;
+    top: 0.7em;
+    right: 3em;
     z-index: 1000;
-    background-color: var(--sidebar-bg); /* Use mdbook theme variable */
-    border: 1px solid var(--sidebar-border);
+}
+
+#lang-select {
+    background: #ffffff;
+    color: #333333;
+    border: 1px solid #dcdcdc;
+    padding: 6px 12px;
     border-radius: 5px;
-    padding: 5px;
-}
-
-#language-switcher label {
-    color: var(--fg);
-    margin-right: 5px;
-}
-
-#language-switcher select {
-    background-color: var(--sidebar-bg);
-    color: var(--fg);
-    border: 1px solid var(--sidebar-border);
-    padding: 3px;
-    border-radius: 3px;
+    font-size: 0.9em;
     cursor: pointer;
+    -webkit-appearance: menulist;
+    -moz-appearance: menulist;
+    appearance: menulist;
+}
+
+#lang-select:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    /* Slightly more prominent shadow on hover */
 }

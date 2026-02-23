@@ -1,5 +1,3 @@
->\>\>
-
 *This guide is a copy of the Software Engineering \[Poetry Guide\]\[https://ohjelmistotekniikka-hy.github.io/python/viikko2#poetry-ja-riippuvuuksien-hallinta\] guide with a few additions.*
 
 In large and complex software projects, it is no longer practical to produce all the code yourself. For example, it does not make sense to implement a separate programming interface for database operations or an application framework for testing code in every software project. To avoid having to reinvent the wheel every time, software developers have created a huge number of open source *libraries* that anyone can use in their projects.
@@ -323,6 +321,4 @@ Once all steps have been completed, try running the failed Poetry command again.
 
 #### Keyring problem
 
-If running the `poetry install `command prompts you for a keyring password, the problem should be solved by running `export PYTHON_KEYRING_BACKEND=keyring.backends.fail.Keyring `in the terminal and then running the `poetry install `command again. You can put this line in your *.bashrc* (or similar) file so that you don\'t have to run it at the beginning of every terminal session.
-
-[^1]: a-z
+If running the `poetry install `command prompts you for a keyring password, the problem should be solved by running `export PYTHON_KEYRING_BACKEND=keyring.backends.fail.Keyring `in the terminal and then running the `poetry install `command again. You can put this line in your *.bashrc* (or similar) file so that you don't have to run it at the beginning of every terminal session.

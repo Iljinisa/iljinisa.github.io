@@ -1,5 +1,3 @@
->\>\>
-
 In these tasks, we will learn about *static* code *analysis* using the Pylint tool, *dependency injection,* and continue learning about Git.
 
 ### Are there any typos or ambiguities in the exercises?
@@ -762,5 +760,3 @@ You can now pull the code again with the command `git pull`. The command `git pu
 ### Submitting assignments
 
 Push all the assignments you have completed (except those that specify that the assignment should not be submitted anywhere). to your GitHub repository and mark the assignments you have completed as \[Timiin\]\[https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2025/tehtavat/konfigurointitehtavat-osa-2\].
-
-\<\<\

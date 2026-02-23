@@ -1,5 +1,3 @@
->\>\>
-
 This course material is still being updated
 
 {% assign part = include.part %}
@@ -345,4 +343,4 @@ Place the file *PULL.md* in your repository and include a link to the pull reque
 
 Push all the tasks you have completed (except those that mention that the task is not to be submitted anywhere) to your GitHub submission repository and mark the tasks you have completed in [Timi https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2025/tehtavat](https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2025/tehtavat)
 
-\<\<\
+ 

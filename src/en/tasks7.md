@@ -1,5 +1,3 @@
->\>\>
-
 This course material is still being updated.
 
 ### Are there any typos or ambiguities in the assignments?
@@ -189,5 +187,3 @@ Please provide course feedback at <https://norppa.jyu.fi/targets/7131/feedback>.
 ### Submitting assignments
 
 Push all your assignments (except those that specify that they should not be submitted anywhere) to your GitHub submission repository and mark your assignments as complete in Timi <https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2025/tehtavat>
-
-\<\<\

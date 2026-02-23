@@ -1,4 +1,4 @@
->\>\>
+
 
 ### Retakes and separate exams
 
@@ -30,4 +30,3 @@ The exam is similar to previous years\' exams for the University of Helsinki cou
 - [autumn 2022](koe2022.md)
 - [fall](koe2021.md)
 
-\<\<\

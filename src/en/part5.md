@@ -1,5 +1,3 @@
->\>\>
-
 The fifth week of the course covers three topics: the Lean philosophy, which has had a major impact on agile software development in recent years; scaling agile methods to larger projects; and various statistical and research data on the use and benefits of agile methods.
 
 ## Typos in the material
@@ -661,4 +659,3 @@ There are also a large number of studies that focus on measuring the benefits of
 
 In almost all studies measuring the benefits of a single technique, such as TDD, the problem is that they do not measure the long-term benefits of the techniques, such as software maintenance and further development. Both common sense and many studies have shown that the majority of software costs are incurred during the maintenance phase, i.e., after the release of the first version. For example, \[this\]\[https://www.researchgate.net/publication/221408114_Distribution_of_Cost_over_the_Application_Lifecycle\_-\_a_Multi-case_Study\] study concludes that as much as 79% of software costs are incurred during the maintenance phase. It is possible that a particular technology may produce short-term benefits but actually reduce productivity in the long term.
 
-\<\<\

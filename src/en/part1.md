@@ -1,5 +1,3 @@
->\>\>
-
 The first part begins with an overview *of software production*, its history, and subfields. This is followed by an introduction to the waterfall model, a previously popular method of managing software projects, and then to agile methods, the current prevailing method of software project development and management.
 
 The latter half of this part focuses *on Scrum*, the most popular agile method, which provides concrete guidelines on how to manage agile software projects.
@@ -559,5 +557,3 @@ Scaled Agile Framework (SAFe), which has risen strongly in recent years, especia
 Scrum, like other agile development methods, originated largely among software developers. A fairly common problem reported when transitioning to agile development is that the rest of the organization remains completely unchanged. This often results in a development model known as \[waterscrumfall\]\[https://www.infoq.com/news/2011/12/water-scrum-fall-is-the-norm/\], where only the development of new program functionalities is done according to Scrum, while budgeting, requirements management, and production continue to follow the old controlled processes.
 
 Let\'s conclude our preliminary introduction to Scrum with the words of the method\'s developers: \"*Scrum is easy to understand but extremely difficult to master*.\"
-
-\<\<\

@@ -1,4 +1,3 @@
->\>\>
 
 First, read <http://jamesshore.com/Blog/Dependency-Injection-Demystified.html>
 
@@ -189,4 +188,3 @@ During testing, a version of the random generator can be injected into the game,
         }
     }
 
-\<\<\

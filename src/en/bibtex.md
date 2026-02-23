@@ -1,4 +1,3 @@
->\>\>
 
     @article{zimmerman2002becoming,
       title={Becoming a self-regulated learner: An overview},
@@ -340,4 +339,3 @@
       year={2013}
     }
 
-\<\<\

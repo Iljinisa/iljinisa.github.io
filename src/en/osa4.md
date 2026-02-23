@@ -1,4 +1,4 @@
->\>\>
+
 
 We have now covered the stages of the software life cycle: requirements specification and quality management. This section focuses on software design and implementation.
 

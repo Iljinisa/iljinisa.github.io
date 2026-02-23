@@ -1,5 +1,3 @@
->\>\>
-
 ## Background
 
 Undergraduate students Riku and Ville need a system that helps them keep the source references used in writing their bachelor\'s theses in order and in a suitable format for their theses. Like all savvy computer science students, Riku and Ville are writing their theses in \[LaTeX\]\[https://www.latex-project.org/\].
@@ -82,5 +80,3 @@ An example of a slightly more extensive BibTeX file can be found [here](bibtex.m
 Riku and Ville want a system that allows them to manage references easily. The program must have at least the following features: - References must be added to the system in a user-friendly format, for example using a form. - The references in the system must be generated into a BibTeX file suitable for LaTeX documents. - It must also be possible to list references in a format that is more suitable for humans. - It should be possible to limit reference lists in some way, e.g., by author, year, or publication. - It would be good if each reference could be assigned a set of categories or tags that would enable more precise searches. - It\'s fine if it\'s an application that runs on a single computer, but it would be better if it were online and accessible from anywhere. - If it only works on a local computer, it should be possible to synchronize saved references between different computers. - It would be great if, for example, you could provide a link to the ACM digital library, e.g. \[like this\]\[https://dl.acm.org/doi/10.1145/2380552.2380613\], the software would crawl the reference information from there. - Other databases such as \[Google Scholar\]\[https://scholar.google.com/\] could also be supported. - An even better feature would be data retrieval based on the \[DOI\]\[https://www.doi.org/\] identifier. - It is worth remembering that LaTeX allows for all kinds of fields for different reference types, but many of these fields are completely unnecessary, at least for bachelor\'s thesis writers.
 
 Requirements are specified with the customer in weekly meetings.
-
-\<\<\
