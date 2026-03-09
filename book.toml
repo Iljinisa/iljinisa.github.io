@@ -13,6 +13,8 @@ additional-js = ["theme/lang_switcher.js"]
 additional-css = ["theme/lang_switcher.css"]
 no-section-label = true
 sidebar-header-nav = false
+git-repository-url = "https://github.com/Iljinisa/iljinisa.github.io"
+edit-url-template = "https://github.com/Iljinisa/iljinisa.github.io/edit/main/{path}"
 
 [output.html.fold]
 enable = true

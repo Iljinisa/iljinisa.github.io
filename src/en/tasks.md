@@ -17,26 +17,26 @@ Participation in the groups is voluntary, and you can come to do assignments and
 
 In addition to the feedback collected at the end of the course, you can give anonymous feedback to the course staff at any time at <https://norppa.jyu.fi/targets/7131/feedback>.
 
-### Week
+### Week 1
 
-- \[theory assignments\]\[https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2025/tehtavat/teoriatehtavat-osa-1\] deadline Sunday, November 2, at 11:59 p.m.
-- [programming/version management/configuration assignments](tehtavat1.md) deadline Monday, November 3, at 11:59 p.m.
+- \[theory assignments\]\[https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2025/tehtavat/teoriatehtavat-osa-1\] deadline {{#include ../includes/schedule.md:dl_theory_v1}}
+- [programming/version management/configuration assignments](tasks1.md) deadline {{#include ../includes/schedule.md:dl_code_v1}}
 
-### Week
+### Week 2
 
-- \[theory assignments\]\[https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2025/tehtavat/teoriatehtavat-osa-2\] deadline Sunday, November 9, at 11:59 p.m.
-- [programming/version management/configuration assignments](tehtavat2.md) deadline Monday, November 10, at 11:59 p.m.
+- \[theory assignments\]\[https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2025/tehtavat/teoriatehtavat-osa-2\] deadline {{#include ../includes/schedule.md:dl_theory_v2}}
+- [programming/version management/configuration assignments](tasks2.md) deadline {{#include ../includes/schedule.md:dl_code_v2}}
 
-### Week
+### Week 3
 
-- \[theory assignments\]\[https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2025/tehtavat/teoriatehtavat-osa-3\] deadline Sunday, November 16, at 11:59 p.m.
-- [programming/version control/configuration assignments](tehtavat3.md) deadline Monday, November 17, at 11:59 p.m.
+- \[theory assignments\]\[https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2025/tehtavat/teoriatehtavat-osa-3\] deadline {{#include ../includes/schedule.md:dl_theory_v3}}
+- [programming/version control/configuration assignments](tasks3.md) deadline {{#include ../includes/schedule.md:dl_code_v3}}
 
-### Week
+### Week 4
 
-- \[theory assignments\]\[https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2025/tehtavat/teoriatehtavat-osa-4\] deadline Sunday, November 23, at 11:59 p.m.
-- [programming/version control/configuration assignments](tehtavat4.md) deadline Monday, November 24, at 11:59 p.m.
+- \[theory assignments\]\[https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2025/tehtavat/teoriatehtavat-osa-4\] deadline {{#include ../includes/schedule.md:dl_theory_v4}}
+- [programming/version control/configuration assignments](tasks4.md) deadline {{#include ../includes/schedule.md:dl_code_v4}}
 
-### Week
+### Week 5
 
-- \[theory assignments\]\[https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2025/tehtavat/teoriatehtavat-osa-5\] deadline Sunday, November 30, at 11:59 p.m.
+- \[theory assignments\]\[https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2025/tehtavat/teoriatehtavat-osa-5\] deadline {{#include ../includes/schedule.md:dl_theory_v5}}
