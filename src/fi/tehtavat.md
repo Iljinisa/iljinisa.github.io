@@ -3,7 +3,7 @@ Kurssiin liittyy viikottaiset laskuharjoitukset. Tehtäviä on _kahden tyyppisi�
 - luennoilla ja kurssimateriaalissa läpikäytävää teoriaa kertaavat _viikoittaiset monivalintatehtävät_, joiden deadline on sunnuntaina klo 23:59:00
 - toinen osa tehtävistä käsittelee ohjelmistotuotantoon liittyviä teknisempiä asioita, kuten versionhallintaa, testaamista ja ohjelmistojen konfigurointia, näiden deadline on _maanantaina klo 23:59_
 
-Tehtävien vaikutus kurssin arvosteluun selviää [osasta 0](osa0.md#kurssin-arvostelu).
+Tehtävien vaikutus kurssin arvosteluun selviää [osassa 0](osa0.md#kurssin-arvostelu).
 
 Kurssin discord kanava sijaitsee muutaman muun kurssin kanssa samalla palvelimella: <https://discord.gg/Fd5Bq36V6U>
 
@@ -26,29 +26,27 @@ Kurssin lopussa kerättävän palautteen lisäksi on voit antaa milloin vain kur
 
 ### Viikko 1
 
-- [teoriatehtävät][https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2025/tehtavat/teoriatehtavat-osa-1] deadline sunnuntai 2.11. klo 23:59:00
-- [ohjelmointi/versionhallinta/konfigurointitehtävät](tehtavat1.md) deadline maanantai 3.11. klo 23:59
+- [teoriatehtävät][https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2025/tehtavat/teoriatehtavat-osa-1] deadline {{#include ../includes/aikataulu.md:dl_teoria_v1}}
+- [ohjelmointi/versionhallinta/konfigurointitehtävät](tehtavat1.md) deadline {{#include ../includes/aikataulu.md:dl_koodi_v1}}
 
 
 ### Viikko 2
 
-- [teoriatehtävät][https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2025/tehtavat/teoriatehtavat-osa-2] deadline sunnuntai 9.11. klo 23:59:00
-- [ohjelmointi/versionhallinta/konfigurointitehtävät](tehtavat2.md) deadline maanantai 10.11. klo 23:59
+- [teoriatehtävät][https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2025/tehtavat/teoriatehtavat-osa-2] deadline {{#include ../includes/aikataulu.md:dl_teoria_v2}}
+- [ohjelmointi/versionhallinta/konfigurointitehtävät](tehtavat2.md) deadline {{#include ../includes/aikataulu.md:dl_koodi_v2}}
 
 
 ### Viikko 3
 
-- [teoriatehtävät][https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2025/tehtavat/teoriatehtavat-osa-3] deadline sunnuntai 16.11. klo 23:59:00
-- [ohjelmointi/versionhallinta/konfigurointitehtävät](tehtavat3.md) deadline maanantai 17.11. klo 23:59
+- [teoriatehtävät][https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2025/tehtavat/teoriatehtavat-osa-3] deadline {{#include ../includes/aikataulu.md:dl_teoria_v3}}
+- [ohjelmointi/versionhallinta/konfigurointitehtävät](tehtavat3.md) deadline {{#include ../includes/aikataulu.md:dl_koodi_v3}}
 
 
 ### Viikko 4
 
-- [teoriatehtävät][https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2025/tehtavat/teoriatehtavat-osa-4] deadline sunnuntai 23.11. klo 23:59:00
-- [ohjelmointi/versionhallinta/konfigurointitehtävät](tehtavat4.md) deadline maanantai 24.11. klo 23:59
+- [teoriatehtävät][https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2025/tehtavat/teoriatehtavat-osa-4] deadline {{#include ../includes/aikataulu.md:dl_teoria_v4}}
+- [ohjelmointi/versionhallinta/konfigurointitehtävät](tehtavat4.md) deadline {{#include ../includes/aikataulu.md:dl_koodi_v4}}
 
 ### Viikko 5
 
-- [teoriatehtävät][https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2025/tehtavat/teoriatehtavat-osa-5] deadline sunnuntai 30.11. klo 23:59:00
-
-
+- [teoriatehtävät][https://tim.jyu.fi/view/kurssit/tie/teka3003/ohjelmistotuotanto-s2025/tehtavat/teoriatehtavat-osa-5] deadline {{#include ../includes/aikataulu.md:dl_teoria_v5}}
